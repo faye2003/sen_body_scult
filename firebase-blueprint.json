@@ -1,0 +1,109 @@
+{
+  "entities": {
+    "Service": {
+      "title": "Service",
+      "description": "Prestation proposée par le salon Body Scult",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "name": { "type": "string" },
+        "description": { "type": "string" },
+        "imageUrl": { "type": "string" },
+        "category": { "type": "string" },
+        "details": { "type": "string" }
+      },
+      "required": ["name", "description", "category"]
+    },
+    "GalleryImage": {
+      "title": "Image Galerie",
+      "description": "Photo des réalisations du salon (Masonry)",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "imageUrl": { "type": "string" },
+        "title": { "type": "string" },
+        "category": { "type": "string" }
+      },
+      "required": ["imageUrl", "category"]
+    },
+    "GalleryVideo": {
+      "title": "Vidéo Galerie",
+      "description": "Lien de vidéo style Reels Instagram ou promotionnelle",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "videoUrl": { "type": "string" },
+        "title": { "type": "string" },
+        "thumbnailUrl": { "type": "string" }
+      },
+      "required": ["videoUrl"]
+    },
+    "Testimonial": {
+      "title": "Témoignage",
+      "description": "Avis client",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "name": { "type": "string" },
+        "comment": { "type": "string" },
+        "rating": { "type": "number" },
+        "avatarUrl": { "type": "string" }
+      },
+      "required": ["name", "comment", "rating"]
+    },
+    "ContactMessage": {
+      "title": "Message de Contact",
+      "description": "Message envoyé via le formulaire de contact",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "name": { "type": "string" },
+        "email": { "type": "string" },
+        "phone": { "type": "string" },
+        "message": { "type": "string" },
+        "createdAt": { "type": "object" }
+      },
+      "required": ["name", "email", "phone", "message"]
+    },
+    "SalonSettings": {
+      "title": "Paramètres Salon",
+      "description": "Informations générales, réseaux et horaires de Body Scult",
+      "type": "object",
+      "properties": {
+        "name": { "type": "string" },
+        "phone": { "type": "string" },
+        "whatsapp": { "type": "string" },
+        "address": { "type": "string" },
+        "email": { "type": "string" },
+        "hours": { "type": "object" },
+        "description": { "type": "string" }
+      }
+    }
+  },
+  "firestore": {
+    "/settings/salon": {
+      "schema": "SalonSettings",
+      "description": "Configuration globale de l'identité du salon"
+    },
+    "/services/{serviceId}": {
+      "schema": "Service",
+      "description": "Tous les services et leurs prestations de Body Scult"
+    },
+    "/gallery/{imageId}": {
+      "schema": "GalleryImage",
+      "description": "Images de l'institut et des prestations (coiffure, ongles, soin, maquillage)"
+    },
+    "/videos/{videoId}": {
+      "schema": "GalleryVideo",
+      "description": "Vidéos de réalisations / promotionnelles"
+    },
+    "/testimonials/{testimonialId}": {
+      "schema": "Testimonial",
+      "description": "Témoignages clients synchronisés"
+    },
+    "/contact_messages/{messageId}": {
+      "schema": "ContactMessage",
+      "description": "Messages reçus par les formulaires de contact"
+    }
+  }
+}

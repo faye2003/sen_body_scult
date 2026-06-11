@@ -1,0 +1,63 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    
+    // Default deny catch-all
+    match /{document=**} {
+      allow read, write: if false;
+    }
+
+    // Helper Functions
+    function isAuthenticated() {
+      return request.auth != null;
+    }
+
+    function isAdmin() {
+      return isAuthenticated() && 
+        (request.auth.token.email == "fayem7409@gmail.com" && request.auth.token.email_verified == true);
+    }
+
+    // Settings
+    match /settings/salon {
+      allow read: if true;
+      allow write: if isAdmin();
+    }
+
+    // Services
+    match /services/{serviceId} {
+      allow read: if true;
+      allow write: if isAdmin();
+    }
+
+    // Gallery
+    match /gallery/{imageId} {
+      allow read: if true;
+      allow write: if isAdmin();
+    }
+
+    // Videos
+    match /videos/{videoId} {
+      allow read: if true;
+      allow write: if isAdmin();
+    }
+
+    // Testimonials
+    match /testimonials/{testimonialId} {
+      allow read: if true;
+      allow write: if isAdmin();
+    }
+
+    // Contact messages (Anyone can submit, admin can read/delete)
+    match /contact_messages/{messageId} {
+      allow create: if request.resource.data.name is string && 
+                      request.resource.data.name.size() <= 100 &&
+                      request.resource.data.email is string &&
+                      request.resource.data.email.size() <= 100 &&
+                      request.resource.data.phone is string &&
+                      request.resource.data.phone.size() <= 30 &&
+                      request.resource.data.message is string &&
+                      request.resource.data.message.size() <= 5000;
+      allow read, delete: if isAdmin();
+    }
+  }
+}

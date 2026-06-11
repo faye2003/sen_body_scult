@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Playfair Display", serif;
+  --font-poppins: "Poppins", sans-serif;
+  
+  --color-primary: #111111; /* Pure Dark for text readability */
+  --color-secondary: #FBF0EA; /* Luxurious Logo Light Cream Beach Peach */
+  --color-accent: #C25B1E; /* Primary Orange of Logo */
+  --color-gold-cream: #F4D5C3; /* Logo light peach */
+  
+  --color-brand-primary: #C25B1E;
+  --color-brand-secondary: #C9642B;
+  --color-brand-light-gray: #F2F2F2;
+  --color-brand-terracotta: #D98C71;
+  --color-brand-deep: #BF4E24;
+  --color-brand-orange: #CC6427;
+  --color-brand-light-peach: #FBF0EA;
+  --color-brand-peach: #F4D5C3;
+  --color-brand-soft-peach: #ECBA9C;
+  --color-brand-copper: #E59F76;
+}
+
+@layer base {
+  body {
+    @apply bg-secondary text-stone-900 font-sans antialiased;
+  }
+}
+
+/* Custom premium visual styles */
+.text-rose-gold {
+  color: #C25B1E;
+}
+
+.bg-rose-gold {
+  background-color: #C25B1E;
+}
+
+.border-rose-gold {
+  border-color: #C25B1E;
+}
+
+.glow-btn {
+  transition: all 0.4s ease;
+}
+.glow-btn:hover {
+  box-shadow: 0 0 20px rgba(194, 91, 30, 0.4);
+}
+
+.font-poppins {
+  font-family: "Poppins", sans-serif;
+}
