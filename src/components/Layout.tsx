@@ -52,13 +52,15 @@ export default function Layout() {
   return (
     <div className="min-h-screen flex flex-col bg-secondary font-sans selection:bg-accent/30 selection:text-primary">
       {/* Premium Elegant Header */}
-      <nav className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-b border-stone-100 shadow-sm transition-all duration-300">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between h-24 items-center">
-
+      <nav className={`fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-b border-stone-100 shadow-sm transition-all duration-300 ${
+        location.pathname === '/services' ? 'h-[20vh] md:h-24' : 'h-24'
+      }`}>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full">
+          <div className="flex justify-between h-full items-center">
+            
             {/* Logo Body Scult */}
             <Link to="/" className="flex items-center">
-              <Logo size="md" />
+              <Logo size="sm" />
             </Link>
 
             {/* Desktop Navigation Links */}
@@ -67,12 +69,14 @@ export default function Layout() {
                 <Link
                   key={link.path}
                   to={link.path}
-                  className={`text-xs uppercase font-poppins tracking-[0.2em] font-medium transition-all duration-300 relative py-2 group hover:text-accent ${location.pathname === link.path ? 'text-accent' : 'text-stone-700'
-                    }`}
+                  className={`text-xs uppercase font-poppins tracking-[0.2em] font-medium transition-all duration-300 relative py-2 group hover:text-accent ${
+                    location.pathname === link.path ? 'text-accent' : 'text-stone-700'
+                  }`}
                 >
                   {link.name}
-                  <span className={`absolute bottom-0 left-0 h-[1.5px] bg-accent transition-all duration-300 ${location.pathname === link.path ? 'w-full' : 'w-0 group-hover:w-full'
-                    }`}></span>
+                  <span className={`absolute bottom-0 left-0 h-[1.5px] bg-accent transition-all duration-300 ${
+                    location.pathname === link.path ? 'w-full' : 'w-0 group-hover:w-full'
+                  }`}></span>
                 </Link>
               ))}
             </div>
@@ -119,13 +123,14 @@ export default function Layout() {
                     key={link.path}
                     to={link.path}
                     onClick={() => setIsMenuOpen(false)}
-                    className={`text-sm uppercase tracking-[0.15em] font-medium py-3 border-b border-stone-50 font-poppins transition-colors ${location.pathname === link.path ? 'text-accent pl-2' : 'text-stone-700 hover:text-accent'
-                      }`}
+                    className={`text-sm uppercase tracking-[0.15em] font-medium py-3 border-b border-stone-50 font-poppins transition-colors ${
+                      location.pathname === link.path ? 'text-accent pl-2' : 'text-stone-700 hover:text-accent'
+                    }`}
                   >
                     {link.name}
                   </Link>
                 ))}
-
+                
                 {/* Mobile Screen WhatsApp Call To Action */}
                 <a
                   href={`https://wa.me/${settings.whatsapp.replace(/\+/g, '').replace(/\s/g, '')}`}
@@ -143,7 +148,7 @@ export default function Layout() {
       </nav>
 
       {/* Main Page Slot with margin top offset because of fixed navbar */}
-      <main className="flex-grow pt-24">
+      <main className={`flex-grow ${location.pathname === '/services' ? 'pt-[40vh] md:pt-24' : 'pt-24'}`}>
         <Outlet />
       </main>
 
@@ -151,7 +156,7 @@ export default function Layout() {
       <footer className="bg-primary text-stone-300 pt-20 pb-10 border-t border-stone-900 font-sans">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-12 lg:gap-16">
-
+            
             {/* Column 1: Identity */}
             <div className="md:col-span-2">
               <Logo size="md" light={true} className="mb-6" />
@@ -239,8 +244,7 @@ export default function Layout() {
           className="bg-[#25D366] text-white p-4.5 rounded-full shadow-2xl hover:scale-105 transition-transform duration-300 flex items-center justify-center cursor-pointer"
           aria-label="Discuter sur WhatsApp"
         >
-          {/* <MessageCircle size={24} fill="currentColor" /> */}
-          <img className="w-8" src="/images/whatsapp.svg" alt="Chat on WhatsApp" />
+          <MessageCircle size={24} fill="currentColor" />
         </a>
       </div>
 

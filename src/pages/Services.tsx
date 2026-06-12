@@ -136,7 +136,7 @@ export default function Services() {
     <div className="bg-secondary min-h-screen">
       
       {/* 1. HEADER */}
-      <section className="bg-primary py-32 text-center relative overflow-hidden">
+      <section className="bg-primary py-12 md:py-32 text-center relative overflow-hidden">
         <div className="absolute inset-0 opacity-[0.1] z-0">
           <img
             src="https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?auto=format&fit=crop&q=80&w=1200"
@@ -145,36 +145,47 @@ export default function Services() {
             referrerPolicy="no-referrer"
           />
         </div>
-        <div className="relative z-10 max-w-4xl mx-auto px-4 space-y-4">
-          <span className="text-accent font-poppins uppercase tracking-[0.4em] text-xs font-bold block">
+        <div className="relative z-10 max-w-4xl mx-auto px-4 space-y-2 md:space-y-4">
+          <span className="text-accent font-poppins uppercase tracking-[0.4em] text-[10px] md:text-xs font-bold block">
             NOTRE CATALOGUE ÉLITE
           </span>
-          <h1 className="text-5xl md:text-7xl font-serif text-white tracking-wide">
+          <h1 className="text-3xl md:text-7xl font-serif text-white tracking-wide">
             Prestations de Prestige
           </h1>
-          <div className="h-[2px] w-12 bg-accent mx-auto my-4"></div>
-          <p className="text-stone-300 font-light text-lg tracking-wide max-w-2xl mx-auto">
+          <div className="h-[2px] w-12 bg-accent mx-auto my-2 md:my-4"></div>
+          <p className="text-stone-300 font-light text-sm md:text-lg tracking-wide max-w-2xl mx-auto">
             Découvrez nos rituels pour révéler votre beauté et vous accorder un moment d'évasion inoubliable à Saly.
           </p>
         </div>
       </section>
 
       {/* 2. STICKY FILTER BAR */}
-      <section className="py-8 bg-white border-y border-stone-100 sticky top-24 z-30 shadow-sm overflow-x-auto">
-        <div className="max-w-7xl mx-auto px-4 flex justify-center space-x-3 md:space-x-4 min-w-max">
-          {categories.map((cat) => (
-            <button
-              key={cat}
-              onClick={() => setActiveCategory(cat)}
-              className={`px-6 py-2.5 text-xs font-poppins tracking-widest uppercase font-semibold transition-all duration-300 rounded-none ${
-                activeCategory === cat
-                  ? 'bg-primary text-white border-primary shadow-lg'
-                  : 'bg-stone-50 text-stone-600 hover:bg-stone-100 border border-stone-200'
-              }`}
-            >
-              {cat}
-            </button>
-          ))}
+      <section className="fixed top-[20vh] left-0 right-0 z-40 h-[20vh] bg-white border-b border-stone-100 shadow-sm flex flex-col justify-center overflow-x-auto md:sticky md:top-24 md:h-auto md:py-8 md:border-y md:border-stone-100 md:shadow-md">
+        <div className="w-full max-w-7xl mx-auto px-4 md:px-6 lg:px-8 flex flex-col justify-center">
+          
+          {/* Mobile indicator for categories */}
+          <div className="flex flex-col items-center justify-center md:hidden mb-2">
+            <span className="text-[9px] uppercase tracking-[0.25em] font-poppins font-bold text-accent">
+              Rituels & Spécialités
+            </span>
+            <div className="h-[1px] w-6 bg-accent/30 mt-1"></div>
+          </div>
+
+          <div className="flex items-center gap-2 overflow-x-auto overflow-y-hidden pb-1 justify-start md:justify-center -mx-4 px-4 md:mx-0 md:px-0 scrollbar-none">
+            {categories.map((cat) => (
+              <button
+                key={cat}
+                onClick={() => setActiveCategory(cat)}
+                className={`px-5 py-2.5 text-[10px] md:text-xs font-poppins tracking-widest uppercase font-semibold transition-all duration-300 rounded-none shrink-0 border ${
+                  activeCategory === cat
+                    ? 'bg-primary text-white border-primary shadow-md'
+                    : 'bg-stone-50 text-stone-600 hover:bg-stone-100 border-stone-200'
+                }`}
+              >
+                {cat}
+              </button>
+            ))}
+          </div>
         </div>
       </section>
 

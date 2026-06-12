@@ -2,8 +2,8 @@ import { Service, GalleryImage, Testimonial, GalleryVideo, SalonSettings } from 
 
 export const PRESET_SETTINGS: SalonSettings = {
   name: 'Body Scult',
-  phone: '+221 77 123 45 67',
-  whatsapp: '+221771234567',
+  phone: '+221 77 312 80 37',
+  whatsapp: '+221773128037',
   address: 'Résidence les Alizés, Route de Saly, Saly, Sénégal',
   email: 'contact@bodyscult-saly.com',
   description: 'Votre espace beauté et bien-être à Saly. Des prestations d\'exception pour révéler votre éclat naturel.',
