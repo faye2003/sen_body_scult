@@ -244,7 +244,7 @@ export default function Layout() {
           className="bg-[#25D366] text-white p-4.5 rounded-full shadow-2xl hover:scale-105 transition-transform duration-300 flex items-center justify-center cursor-pointer"
           aria-label="Discuter sur WhatsApp"
         >
-          <MessageCircle size={24} fill="currentColor" />
+          <img className="w-8" src="/images/whatsapp.svg" alt="Chat on WhatsApp" />
         </a>
       </div>
 

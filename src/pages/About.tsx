@@ -157,7 +157,7 @@ export default function About() {
                 LA FONDATRICE & DIRECTRICE
               </span>
               <h2 className="text-4xl font-serif text-primary tracking-wide">
-                Fatou Faye
+                Aminata DIALLO
               </h2>
               <p className="text-stone-400 text-xs font-poppins uppercase tracking-widest -mt-2">
                 Experte en Soins de Beauté & Haute Cosmétique Clinique
