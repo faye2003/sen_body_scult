@@ -104,13 +104,15 @@ export default function About() {
               className="grid grid-cols-2 gap-4"
             >
               <img
-                src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&q=80&w=400"
+                src="/images/galleries/img1.jpeg"
+                // src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&q=80&w=400"
                 alt="Body Scult Design 1"
                 className="w-full h-80 object-cover border border-stone-100 shadow-lg"
                 referrerPolicy="no-referrer"
               />
               <img
-                src="https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?auto=format&fit=crop&q=80&w=400"
+                src="/images/galleries/img2.jpeg"
+                // src="https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?auto=format&fit=crop&q=80&w=400"
                 alt="Body Scult Design 2"
                 className="w-full h-80 object-cover mt-12 border border-stone-100 shadow-lg"
                 referrerPolicy="no-referrer"
@@ -137,7 +139,8 @@ export default function About() {
               <div className="relative">
                 <div className="absolute inset-0 bg-accent/20 translate-x-4 translate-y-4 z-0"></div>
                 <img
-                  src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=600"
+                  src="/images/Aminata_Diallo_body_scult.png"
+                  // src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=600"
                   alt="La Fondatrice de Body Scult"
                   className="w-full h-[450px] object-cover relative z-10 border border-stone-100 shadow-2xl"
                   referrerPolicy="no-referrer"
@@ -166,7 +169,7 @@ export default function About() {
               <div className="h-[1px] w-16 bg-accent"></div>
 
               <p className="text-stone-600 font-light text-base leading-relaxed">
-                Après s'être formée dans de prestigieux instituts de beauté en Europe et en Afrique, Fatou Faye a choisi de concrétiser sa vision au Sénégal en créant **Body Scult** en plein cœur de Saly. Son ambition majeure est d'offrir une expérience de soin digne de la haute clinique esthétique mondiale, dans une ambiance chaleureuse et détendue propice au repos absolu de l'esprit.
+                Après s'être formée dans de prestigieux instituts de beauté en Europe et en Afrique, Aminata DIALLO a choisi de concrétiser sa vision au Sénégal en créant **Body Scult** en plein cœur de Saly. Son ambition majeure est d'offrir une expérience de soin digne de la haute clinique esthétique mondiale, dans une ambiance chaleureuse et détendue propice au repos absolu de l'esprit.
               </p>
 
               <blockquote className="border-l-4 border-accent pl-6 py-2 text-stone-700 italic font-serif text-lg leading-relaxed bg-white">

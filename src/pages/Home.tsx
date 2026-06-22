@@ -183,7 +183,8 @@ export default function Home() {
             >
               <div className="absolute inset-0 bg-accent/10 translate-x-4 translate-y-4 rounded-none z-0"></div>
               <img
-                src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&q=80&w=800"
+                src="/images/galleries/img2.jpeg"
+                // src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&q=80&w=800"
                 alt="Body Scult Beauty Space"
                 className="w-full h-full object-cover relative z-10 border border-stone-100 shadow-xl"
                 referrerPolicy="no-referrer"

@@ -23,7 +23,8 @@ export const PRESET_SERVICES: Service[] = [
     id: 'maderotherapie',
     name: 'Madérothérapie',
     description: 'Technique de remodelage corporel ancestrale utilisant des outils en bois nobles pour éliminer la cellulite et sculpter la silhouette.',
-    imageUrl: 'https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&q=80&w=800',
+    imageUrl: '/images/galleries/massage_tonique.jpeg',
+    // imageUrl: 'https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&q=80&w=800',
     category: 'Minceur',
     details: 'Pratique extrêmement performante de remodelage. Nos expertes utilisent des rouleaux, coupes et outils en bois spécifiques sculptés pour agir en profondeur, relancer la circulation lymphatique, cibler les amas graisseux et raffermir visiblement la peau dès la première séance.'
   },
@@ -47,7 +48,8 @@ export const PRESET_SERVICES: Service[] = [
     id: 'lifting-colombien',
     name: 'Lifting Colombien fessier',
     description: 'Procédure révolutionnaire d\'aspiration par ventouses pour galber, tonifier et rehausser le volume fessier de façon 100% naturelle.',
-    imageUrl: 'https://images.unsplash.com/photo-1519823551278-64ac92834907?auto=format&fit=crop&q=80&w=800',
+    imageUrl: '/images/galleries/fessier.jpeg',
+    // imageUrl: 'https://images.unsplash.com/photo-1519823551278-64ac92834907?auto=format&fit=crop&q=80&w=800',
     category: 'Minceur',
     details: 'Grâce à des ventouses de vacuum thérapie adaptées, ce soin applique une dépressurisation cutanée qui stimule la microcirculation sanguine, draine l\'excès d\'eau et stimule les muscles fessiers pour leur redonner galbe, fermeté et un effet push-up immédiat.'
   },
@@ -55,7 +57,8 @@ export const PRESET_SERVICES: Service[] = [
     id: 'massage-tonique',
     name: 'Massage Tonique & Revitalisant',
     description: 'Massage dynamique avec pressions profondes pour libérer les tensions musculaires tenaces et restaurer l\'énergie vitale.',
-    imageUrl: 'https://images.unsplash.com/photo-1519823551278-64ac92834907?auto=format&fit=crop&q=80&w=800',
+    imageUrl: '/images/galleries/massage_tonique.jpeg',
+    // imageUrl: 'https://images.unsplash.com/photo-1519823551278-64ac92834907?auto=format&fit=crop&q=80&w=800',
     category: 'Massages',
     details: 'Idéal pour dénouer les raideurs musculaires ou redynamiser le corps. Alliant étirements, pressions rythmées et techniques revigorantes, ce massage réveille la circulation générale et procure une sensation intense de légèreté générale.'
   },
@@ -63,7 +66,8 @@ export const PRESET_SERVICES: Service[] = [
     id: 'massage-relaxant',
     name: 'Massage Relaxant',
     description: 'Modelage enveloppant de lâcher-prise absolu pour évacuer les traces de fatigue psychologique et physique.',
-    imageUrl: 'https://images.unsplash.com/photo-1519699047748-de8e457a634e?auto=format&fit=crop&q=80&w=800',
+    imageUrl: '/images/galleries/massage_relaxant.jpeg',
+    // imageUrl: 'https://images.unsplash.com/photo-1519699047748-de8e457a634e?auto=format&fit=crop&q=80&w=800',
     category: 'Massages',
     details: 'Accordez-vous une parenthèse relaxante. Avec de longs gestes doux aux huiles botaniques de prestige, ce massage aide à dissoudre le stress quotidien, favorise un sommeil réparateur et recentre pleinement vos énergies.'
   },
@@ -87,7 +91,8 @@ export const PRESET_SERVICES: Service[] = [
     id: 'pedicure',
     name: 'Pédicure Spa d\'Exception',
     description: 'Soin complet de remise en beauté et réconfort pour des pieds infiniment doux et des ongles soignés.',
-    imageUrl: 'https://images.unsplash.com/photo-1519014816548-bf5fe059798b?auto=format&fit=crop&q=80&w=800',
+    imageUrl: '/images/galleries/pedicures.jpeg',
+    // imageUrl: 'https://images.unsplash.com/photo-1519014816548-bf5fe059798b?auto=format&fit=crop&q=80&w=800',
     category: 'Onglerie',
     details: 'Profitez d\'un bain de pied relaxant parfumé, suivi d\'un gommage revitalisant pour l\'élimination des cuticules et rugosités callosiques. Vos ongles sont taillés à la perfection et sublimés, suivis d\'une onctueuse hydratation au beurre de karité.'
   },

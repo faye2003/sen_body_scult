@@ -213,7 +213,7 @@ export default function Layout() {
 
           <div className="border-t border-stone-900 mt-16 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-stone-500 font-poppins tracking-widest gap-4">
             <p>&copy; {new Date().getFullYear()} BODY SCULT SALY. TOUS DROITS RÉSERVÉS.</p>
-            <p className="text-[10px] text-stone-600">PREMIUM INSTITUT • SALY, SÉNÉGAL</p>
+            <p className="text-[10px] text-stone-600"><a href="https://www.mamadou-faye.com" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors">Par • Lywa Technology</a></p>
           </div>
         </div>
       </footer>
