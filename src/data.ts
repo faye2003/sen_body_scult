@@ -4,17 +4,17 @@ export const PRESET_SETTINGS: SalonSettings = {
   name: 'Body Scult',
   phone: '+221 77 312 80 37',
   whatsapp: '+221773128037',
-  address: 'Résidence les Alizés, Route de Saly, Saly, Sénégal',
-  email: 'contact@bodyscult-saly.com',
+  address: 'Mbour, Saly, Ngaparou',
+  email: 'nawmy312@gmail.com',
   description: 'Votre espace beauté et bien-être à Saly. Des prestations d\'exception pour révéler votre éclat naturel.',
   hours: {
-    lundi: '09:00 - 19:00',
-    mardi: '09:00 - 19:00',
-    mercredi: '09:00 - 19:00',
-    jeudi: '09:00 - 19:00',
-    vendredi: '09:00 - 20:00',
-    samedi: '09:00 - 20:00',
-    dimanche: 'Fermé',
+    lundi: '09:00 - 19:30',
+    mardi: '09:00 - 19:30',
+    mercredi: '09:00 - 19:30',
+    jeudi: '09:00 - 19:30',
+    vendredi: '09:00 - 19:30',
+    samedi: '09:00 - 19:30',
+    dimanche: '09:00 - 19:30',
   }
 };
 
@@ -23,7 +23,7 @@ export const PRESET_SERVICES: Service[] = [
     id: 'maderotherapie',
     name: 'Madérothérapie',
     description: 'Technique de remodelage corporel ancestrale utilisant des outils en bois nobles pour éliminer la cellulite et sculpter la silhouette.',
-    imageUrl: '/images/galleries/massage_tonique.jpeg',
+    imageUrl: '/images/galleries/massage_tonique.jpeg', 
     // imageUrl: 'https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&q=80&w=800',
     category: 'Minceur',
     details: 'Pratique extrêmement performante de remodelage. Nos expertes utilisent des rouleaux, coupes et outils en bois spécifiques sculptés pour agir en profondeur, relancer la circulation lymphatique, cibler les amas graisseux et raffermir visiblement la peau dès la première séance.'

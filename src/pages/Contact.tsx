@@ -104,7 +104,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <h4 className="font-poppins font-semibold text-xs tracking-widest text-primary uppercase mb-1">
-                    Adresse Clinique
+                    Adresse Institut
                   </h4>
                   <p className="text-stone-500 font-light text-sm max-w-sm leading-relaxed">
                     {settings.address}
@@ -304,7 +304,8 @@ export default function Contact() {
             Notre salon est situé à la Résidence les Alizés, sur l'axe routier principal de Saly.
           </p>
           <a
-            href="https://maps.google.com/?q=Saly,Senegal"
+            href="https://www.google.com/maps/dir//''/data=!4m7!4m6!1m1!4e2!1m2!1m1!1s0xec18900338a29d9:0x1f8a79014d6c9d17!3e0?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAMYASAF"
+            // href="https://maps.google.com/?q=Saly,Senegal"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center space-x-2 text-accent text-xs uppercase tracking-widest font-semibold font-poppins hover:text-stone-900 transition-colors"
@@ -314,7 +315,7 @@ export default function Contact() {
           </a>
         </div>
 
-        <iframe
+        {/* <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15467.43852899451!2d-16.9936838!3d14.4443916!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xee9288f5f5f5f5f5%3A0x5f5f5f5f5f5f5f5f!2sSaly%2C%20Senegal!5e0!3m2!1sen!2sfr!4v1625000000000!5m2!1sen!2sfr"
           width="100%"
           height="100%"
@@ -322,6 +323,17 @@ export default function Contact() {
           allowFullScreen
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"
+          title="Google Maps Body Scult Saly"
+        ></iframe> */}
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3863.5388794934393!2d-17.013090526381077!3d14.4537176806589!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xec18900338a29d9%3A0x1f8a79014d6c9d17!2sBODY%20SCULT!5e0!3m2!1sfr!2ssn!4v1784005107824!5m2!1sfr!2ssn" 
+          width="100%" 
+          height="100%" 
+          style={{ border: 0 }} 
+          allowFullScreen 
+          loading="lazy" 
+          referrerPolicy="no-referrer-when-downgrade"
+          // referrerpolicy="strict-origin-when-cross-origin"
           title="Google Maps Body Scult Saly"
         ></iframe>
 
