@@ -164,10 +164,10 @@ export default function Layout() {
                 {settings.description} Une atmosphère intimiste et décontractée au Sénégal pour révéler la grandeur de votre beauté naturelle.
               </p>
               <div className="flex space-x-5">
-                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors">
+                <a href="https://www.instagram.com/body__scult/" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors">
                   <Instagram size={20} />
                 </a>
-                <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors">
+                <a href="https://web.facebook.com/profile.php?id=61591793405671" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors">
                   <Facebook size={20} />
                 </a>
               </div>
