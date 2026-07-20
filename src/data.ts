@@ -238,13 +238,15 @@ export const PRESET_GALLERY: GalleryImage[] = [
 export const PRESET_VIDEOS: GalleryVideo[] = [
   {
     id: 'vid-1',
-    videoUrl: 'https://assets.mixkit.co/videos/preview/mixkit-relaxing-massage-on-spa-salon-40348-large.mp4',
+    videoUrl: '/images/galleries/massage_un.mp4',
+    // videoUrl: 'https://assets.mixkit.co/videos/preview/mixkit-relaxing-massage-on-spa-salon-40348-large.mp4',
     title: 'Massage Holistique & Rituel Madérothérapie en Action',
     thumbnailUrl: 'https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&q=80&w=800'
   },
   {
     id: 'vid-2',
-    videoUrl: 'https://assets.mixkit.co/videos/preview/mixkit-woman-enjoying-a-facial-massage-at-a-spa-40351-large.mp4',
+    videoUrl: '/images/galleries/massage_drainage.mp4',
+    // videoUrl: 'https://assets.mixkit.co/videos/preview/mixkit-woman-enjoying-a-facial-massage-at-a-spa-40351-large.mp4',
     title: 'Soin Visage Hydrafacial & Geste de Massage Kobi',
     thumbnailUrl: 'https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?auto=format&fit=crop&q=80&w=800'
   }
